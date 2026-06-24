@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ZombieAI : MonoBehaviour
@@ -6,6 +7,7 @@ public class ZombieAI : MonoBehaviour
     public float speed = 2f;          // Kecepatan jalan zombie
     public float jarakKejar = 10f;     // Jarak maksimal zombie bisa melihat character
     public float jarakSerang = 1.5f;   // Jarak minimal zombie untuk mulai menyerang
+    public float knockBack = 5f;   // Jarak minimal zombie untuk mulai menyerang
 
     [Header("Pengaturan Serangan Zombie")]
     public int damageSerang = 1;       // Berapa darah character yang berkurang
@@ -27,11 +29,17 @@ public class ZombieAI : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private bool menghadapKanan = false;
+    private SpriteRenderer spriteRenderer;
+
+    private KnockBack knockBacks;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        knockBacks = GetComponent<KnockBack>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Mengambil komponen AudioSource yang menempel pada zombie
         audioSource = GetComponent<AudioSource>();
@@ -124,12 +132,16 @@ public class ZombieAI : MonoBehaviour
 
     // ... (Kodingan atas kamu tetap sama) ...
 
-    public void ZombieTerkenaHit(int damagePisau)
+    public void ZombieTerkenaHit(int damagePisau, Vector2 playerVEC)
     {
         if (currentHealthZombie <= 0) return;
 
+        StartCoroutine(redEffect());
+
         currentHealthZombie -= damagePisau;
         Debug.Log("Zombie Terluka! Nyawa Zombie sekarang: " + currentHealthZombie);
+
+        knockBacks.TakeDamage(playerVEC);
 
         if (currentHealthZombie > 0)
         {
@@ -184,5 +196,13 @@ public class ZombieAI : MonoBehaviour
             skala.x *= -1;
             transform.localScale = skala;
         }
+    }
+
+    IEnumerator redEffect()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
+        yield return new WaitForSeconds(0.1f);
     }
 }
