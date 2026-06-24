@@ -313,14 +313,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 99654db6073ff4050aca4b56ea1b0a8b, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -346,10 +338,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.32
       objectReference: {fileID: 0}
@@ -367,9 +355,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175815375}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 175815381}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1 &175815367 stripped
 GameObject:
@@ -500,20 +485,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &175815381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175815367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &240867919
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,20 +898,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &496848032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496848012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1312,20 +1269,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &619971044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619971024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &623320304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
@@ -1455,20 +1398,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &623320324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623320304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &639668668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,14 +1861,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2834552850196481573, guid: 143df3d9490854c2b91b849eff959c49, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -1965,10 +1886,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.6
       objectReference: {fileID: 0}
@@ -1986,9 +1903,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 623320318}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 623320324}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1 &915438849
 GameObject:
@@ -2121,14 +2035,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 143df3d9490854c2b91b849eff959c49, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -2154,10 +2060,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.44
       objectReference: {fileID: 0}
@@ -2175,9 +2077,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1654749327}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1654749333}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1001 &991479665
 PrefabInstance:
@@ -2235,14 +2134,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 66b8f84ad5f2049b3ae59a26383440ec, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -2268,10 +2159,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.2
       objectReference: {fileID: 0}
@@ -2289,9 +2176,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 991479674}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 991479680}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1 &991479666 stripped
 GameObject:
@@ -2422,20 +2306,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &991479680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991479666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &1040982814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,7 +2432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0438a3552e89b4f5c9fb0bdd1628cfa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SensorPisau
-  chara: {x: 0, y: 0}
   damagePisau: 1
 --- !u!61 &1118909519
 BoxCollider2D:
@@ -2681,14 +2550,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 66b8f84ad5f2049b3ae59a26383440ec, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -2714,10 +2575,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.2
       objectReference: {fileID: 0}
@@ -2735,9 +2592,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 619971038}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 619971044}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1001 &1200589393
 PrefabInstance:
@@ -2795,14 +2649,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 99654db6073ff4050aca4b56ea1b0a8b, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -2828,10 +2674,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.32
       objectReference: {fileID: 0}
@@ -2849,9 +2691,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2122754458}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2122754464}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1 &1250117898
 GameObject:
@@ -3157,20 +2996,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1654749333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654749313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &1677915371
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,14 +3336,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 6d5507b78974946caa9f1825af713fa4, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -3544,10 +3361,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.28
       objectReference: {fileID: 0}
@@ -3565,9 +3378,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1774929827}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1774929833}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1 &1774929819 stripped
 GameObject:
@@ -3698,20 +3508,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1774929833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774929819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1 &1901138249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4803,20 +4599,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2122754464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122754444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc4c68ead11c6c408c443896132087d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
-  knockbackForce: 5
-  knockbackDuration: 0.2
 --- !u!1001 &1633219172965709681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4875,7 +4657,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 800f2b0c914a64e67b267f1b68652f02, type: 3}
     - target: {fileID: 1836862367171388502, guid: c4956c1e992be4d2fbd5e1405ef5adb4, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5015,14 +4797,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4723107735738678597, guid: 6d5507b78974946caa9f1825af713fa4, type: 3}
-    - target: {fileID: 5172709745279842938, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: knockBack
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6482393819559669627, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: suaraMati
       value: 
@@ -5044,10 +4818,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693052563033529971, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.28
       objectReference: {fileID: 0}
@@ -5065,9 +4835,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 496848026}
-    - targetCorrespondingSourceObject: {fileID: 4928755582693093206, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 496848032}
   m_SourcePrefab: {fileID: 100100000, guid: a0132d617079f4434bab4ab979cd772f, type: 3}
 --- !u!1001 &6039904856641537187
 PrefabInstance:
