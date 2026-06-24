@@ -17,6 +17,8 @@ public class KontrolSeranganKursor : MonoBehaviour
 
     private float waktuSerangBerikutnya = 0f;
 
+    private NyawaPlayer NyawaPlayer; //ambil class nyawaPlayer
+
     void Start()
     {
         // Pastikan di awal game efek tebasan/hitbox mati
@@ -35,17 +37,23 @@ public class KontrolSeranganKursor : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
+
+        NyawaPlayer = GetComponent<NyawaPlayer>();
     }
 
     void Update()
     {
         PutarPivotKeArahKursor();
 
-        // Cek input klik kiri mouse DAN apakah waktu cooldown/delay sudah selesai
-        if (Input.GetMouseButtonDown(0) && Time.time >= waktuSerangBerikutnya)
+        //player hanya bisa serang jika currentHealth masih ada
+        if (NyawaPlayer.currentHealth > 0)
         {
-            Serang();
-            waktuSerangBerikutnya = Time.time + delaySerang; // Setel waktu cooldown berikutnya
+            // Cek input klik kiri mouse DAN apakah waktu cooldown/delay sudah selesai
+            if (Input.GetMouseButtonDown(0) && Time.time >= waktuSerangBerikutnya)
+            {
+                Serang();
+                waktuSerangBerikutnya = Time.time + delaySerang; // Setel waktu cooldown berikutnya
+            }
         }
     }
 
