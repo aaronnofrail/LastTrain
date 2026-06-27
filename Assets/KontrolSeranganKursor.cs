@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class KontrolSeranganKursor : MonoBehaviour
@@ -17,6 +19,23 @@ public class KontrolSeranganKursor : MonoBehaviour
 
     private float waktuSerangBerikutnya = 0f;
 
+    public float cooldownATK = 1;
+
+    private float coolDownTime;
+
+    private NyawaPlayer NyawaPlayer; //ambil class nyawaPlayer
+
+    private Gerakan gerakan;
+
+    private int startSpeed;
+
+    private void Awake()
+    {
+        NyawaPlayer = GetComponent<NyawaPlayer>();
+
+        gerakan = GetComponent<Gerakan>();
+    }
+
     void Start()
     {
         // Pastikan di awal game efek tebasan/hitbox mati
@@ -35,17 +54,35 @@ public class KontrolSeranganKursor : MonoBehaviour
         {
             mainCamera = Camera.main;
         }
+
+        startSpeed = gerakan.Speed;
     }
 
     void Update()
     {
         PutarPivotKeArahKursor();
 
-        // Cek input klik kiri mouse DAN apakah waktu cooldown/delay sudah selesai
-        if (Input.GetMouseButtonDown(0) && Time.time >= waktuSerangBerikutnya)
+        //player hanya bisa serang jika currentHealth masih ada
+        if (NyawaPlayer.currentHealth > 0)
         {
-            Serang();
-            waktuSerangBerikutnya = Time.time + delaySerang; // Setel waktu cooldown berikutnya
+            // Cek input klik kiri mouse DAN apakah waktu cooldown/delay sudah selesai
+            //if (Input.GetMouseButtonDown(0) && Time.time >= waktuSerangBerikutnya)
+            //{
+            //    Serang();
+            //    waktuSerangBerikutnya = Time.time + delaySerang; // Setel waktu cooldown berikutnya
+            //}
+
+            if(coolDownTime > 0)
+            {
+                coolDownTime -= Time.deltaTime;
+            }
+
+            if (Input.GetMouseButtonDown(0) && coolDownTime <= 0)
+            {
+                gerakan.Speed = 0;
+                Serang();
+                coolDownTime = cooldownATK;
+            }
         }
     }
 
@@ -78,10 +115,19 @@ public class KontrolSeranganKursor : MonoBehaviour
 
         visualHitboxPisau.SetActive(true);
         Invoke("MatikanEfekTebasan", durasiTebasan);
+
+        StartCoroutine(FreezeWhileATK());
     }
 
     void MatikanEfekTebasan()
     {
         visualHitboxPisau.SetActive(false);
+    }
+
+    IEnumerator FreezeWhileATK()
+    {
+        yield return new WaitForSeconds(0.5f);
+        gerakan.Speed = startSpeed;
+        yield return new WaitForSeconds(0.5f);
     }
 }

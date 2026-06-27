@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class SensorPisau : MonoBehaviour
 {
+    public Vector2 chara;
+
     // Berapa damage tebasan pisau karakter ke zombie
     public int damagePisau = 1;
+
+    private void Update()
+    {
+        chara = new Vector2(transform.position.x, transform.position.y);  
+    }
 
     // Fungsi bawaan Unity yang otomatis jalan jika collider "Is Trigger" menyentuh objek lain
     private void OnTriggerEnter2D(Collider2D objekLain)
@@ -17,7 +24,7 @@ public class SensorPisau : MonoBehaviour
             // Jika script ZombieAI ketemu, suruh zombie menerima damage dan memicu animasi terluka/mati
             if (scriptZombie != null)
             {
-                scriptZombie.ZombieTerkenaHit(damagePisau);
+                scriptZombie.ZombieTerkenaHit(damagePisau, chara);
             }
         }
     }
