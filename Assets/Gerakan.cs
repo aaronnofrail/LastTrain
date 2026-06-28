@@ -65,6 +65,8 @@ public class Gerakan : MonoBehaviour
             anim.SetFloat("Kecepatan", Mathf.Abs(GerakSamping));
         }
 
+        //BalikBadanKeArahKursor();
+
         //if (GerakSamping > 0)
         //{
         //    transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
@@ -74,21 +76,21 @@ public class Gerakan : MonoBehaviour
         //    transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
         //}
 
-        if (Input.GetMouseButton(0))
-        {
-            BalikBadanKeArahKursor();
-        }
-        else
-        {
-            if (GerakSamping > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
-            else if (GerakSamping < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-        }
+        //if (Input.GetMouseButton(0))
+        //{
+        //    BalikBadanKeArahKursor();
+        //}
+        //else
+        //{
+        //    if (GerakSamping > 0)
+        //    {
+        //        spriteRenderer.flipX = false;
+        //    }
+        //    else if (GerakSamping < 0)
+        //    {
+        //        spriteRenderer.flipX = true;
+        //    }
+        //}
     }
 
     void BalikBadanKeArahKursor()
