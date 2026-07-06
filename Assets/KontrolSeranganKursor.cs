@@ -60,7 +60,7 @@ public class KontrolSeranganKursor : MonoBehaviour
 
     void Update()
     {
-        PutarPivotKeArahKursor();
+        //PutarPivotKeArahKursor();
 
         //player hanya bisa serang jika currentHealth masih ada
         if (NyawaPlayer.currentHealth > 0)
