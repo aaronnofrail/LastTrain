@@ -1,19 +1,25 @@
 using UnityEngine;
+using System.Collections; 
 
 public class NyawaPlayer : MonoBehaviour
 {
     [Header("Pengaturan Nyawa")]
     public int maxHealth = 5;
-
-    // Diubah menjadi public agar script ZombieAI bisa mengecek apakah player masih hidup
     public int currentHealth;
 
+    [Header("Pengaturan Visual Flash")]
+    public Color warnaFlash = Color.red;
+    public float durasiFlash = 0.1f;
+
     private Animator anim;
+    private SpriteRenderer spriteRenderer; 
+    private Coroutine flashCoroutine; 
 
     void Start()
     {
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
         Debug.Log("Nyawa Player Penuh: " + currentHealth + "/" + maxHealth);
     }
 
@@ -24,8 +30,10 @@ public class NyawaPlayer : MonoBehaviour
 
         if (anim != null && currentHealth > 0)
         {
-            anim.SetTrigger("terluka"); // Picu animasi kaget/terluka
+            anim.SetTrigger("terluka"); 
         }
+
+        MulaiEfekFlash();
 
         if (currentHealth <= 0)
         {
@@ -33,19 +41,28 @@ public class NyawaPlayer : MonoBehaviour
         }
     }
 
+    void MulaiEfekFlash()
+    {
+        if (spriteRenderer == null) return;
+        if (flashCoroutine != null) StopCoroutine(flashCoroutine);
+        flashCoroutine = StartCoroutine(EfekFlashRoutine());
+    }
+
+    IEnumerator EfekFlashRoutine()
+    {
+        spriteRenderer.color = warnaFlash;           
+        yield return new WaitForSeconds(durasiFlash); 
+        spriteRenderer.color = Color.white;          
+        flashCoroutine = null;
+    }
+
     void Mati()
     {
         Debug.Log("Character MATI!");
-        
-        if (anim != null)
-        {
-            anim.SetTrigger("mati"); 
-        }
+        if (anim != null) anim.SetTrigger("mati"); 
 
-        // 1. Matikan script gerakan
-        GetComponent<Gerakan>().enabled = false; 
+        if (GetComponent<Gerakan>() != null) GetComponent<Gerakan>().enabled = false; 
 
-        // 2. Bekukan fisik Rigidbody2D agar diam di tempat
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
@@ -53,11 +70,7 @@ public class NyawaPlayer : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Static; 
         }
 
-        // 3. Matikan Box Collider 2D agar tidak menopang udara
         BoxCollider2D colliderBadan = GetComponent<BoxCollider2D>();
-        if (colliderBadan != null)
-        {
-            colliderBadan.enabled = false;
-        }
+        if (colliderBadan != null) colliderBadan.enabled = false;
     }
 }
