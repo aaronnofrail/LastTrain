@@ -39,7 +39,7 @@ public class KontrolSeranganKursor : MonoBehaviour
 
     void Update()
     {
-        PutarPivotKeArahKursor();
+        //PutarPivotKeArahKursor();
 
         // Cek input klik kiri mouse DAN apakah waktu cooldown/delay sudah selesai
         if (Input.GetMouseButtonDown(0) && Time.time >= waktuSerangBerikutnya)
