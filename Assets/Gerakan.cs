@@ -19,8 +19,6 @@ public class Gerakan : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRenderer;
 
-    public bool isAttack;
-
     void Start()
     {
         Debug.Log("unity start");
@@ -56,7 +54,6 @@ public class Gerakan : MonoBehaviour
 
     void Bergerak()
     {
-        BalikBadanKeArahKursor();
         float GerakSamping = Input.GetAxisRaw("Horizontal");
         rd.linearVelocity = new Vector2(GerakSamping * Speed, rd.linearVelocity.y);
 
@@ -65,20 +62,11 @@ public class Gerakan : MonoBehaviour
             anim.SetFloat("Kecepatan", Mathf.Abs(GerakSamping));
         }
 
-        //if (GerakSamping > 0)
-        //{
-        //    transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-        //}
-        //else if (GerakSamping < 0)
-        //{
-        //    transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-        //}
-
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) 
         {
             BalikBadanKeArahKursor();
         }
-        else
+        else 
         {
             if (GerakSamping > 0)
             {

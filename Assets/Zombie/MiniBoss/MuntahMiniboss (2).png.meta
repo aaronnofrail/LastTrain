@@ -1,0 +1,413 @@
+fileFormatVersion: 2
+guid: 8b0a76c017a24479883a5bb8855c79ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4418261139104376544
+    second: MuntahMiniboss (2)_0
+  - first:
+      213: 439535870778310110
+    second: MuntahMiniboss (2)_1
+  - first:
+      213: 6443005492515809931
+    second: MuntahMiniboss (2)_2
+  - first:
+      213: -9157665666026349186
+    second: MuntahMiniboss (2)_3
+  - first:
+      213: -2716701795044951930
+    second: MuntahMiniboss (2)_4
+  - first:
+      213: -6572227924437277549
+    second: MuntahMiniboss (2)_5
+  - first:
+      213: 8068754093348871998
+    second: MuntahMiniboss (2)_6
+  - first:
+      213: -5811210249657616197
+    second: MuntahMiniboss (2)_7
+  - first:
+      213: 7745560044383600664
+    second: MuntahMiniboss (2)_8
+  - first:
+      213: 4138882548514934681
+    second: MuntahMiniboss (2)_9
+  - first:
+      213: 1455397210050896563
+    second: MuntahMiniboss (2)_10
+  - first:
+      213: -4769453817398143431
+    second: MuntahMiniboss (2)_11
+  - first:
+      213: -6749989714416254918
+    second: MuntahMiniboss (2)_12
+  - first:
+      213: 8254996114711322947
+    second: MuntahMiniboss (2)_13
+  - first:
+      213: -920675162761768172
+    second: MuntahMiniboss (2)_14
+  - first:
+      213: -1357900276500274944
+    second: MuntahMiniboss (2)_15
+  - first:
+      213: -3735005272962783644
+    second: MuntahMiniboss (2)_16
+  - first:
+      213: 3608018668979299065
+    second: MuntahMiniboss (2)_17
+  - first:
+      213: 6081461741428669853
+    second: MuntahMiniboss (2)_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 45
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02955c627ee2fa2c0800000000000000
+      internalID: -4418261139104376544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd78c3bb8b891600800000000000000
+      internalID: 439535870778310110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_2
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8aab43eb572a6950800000000000000
+      internalID: 6443005492515809931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 2
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d55bc989f69e080800000000000000
+      internalID: -9157665666026349186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_5
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394630d1681cac4a0800000000000000
+      internalID: -6572227924437277549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_7
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb87c0a211f6a5fa0800000000000000
+      internalID: -5811210249657616197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_9
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fcb47cfb3407930800000000000000
+      internalID: 4138882548514934681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_11
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9365a51d50f7fcdb0800000000000000
+      internalID: -4769453817398143431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_15
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001ebca94e4c72de0800000000000000
+      internalID: -1357900276500274944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuntahMiniboss (2)_17
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 3
+        width: 344
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f22d730dd1421230800000000000000
+      internalID: 3608018668979299065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1b360c1251eac46f18226ef786b1c069
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MuntahMiniboss (2)_0: -4418261139104376544
+      MuntahMiniboss (2)_1: 439535870778310110
+      MuntahMiniboss (2)_10: 1455397210050896563
+      MuntahMiniboss (2)_11: -4769453817398143431
+      MuntahMiniboss (2)_12: -6749989714416254918
+      MuntahMiniboss (2)_13: 8254996114711322947
+      MuntahMiniboss (2)_14: -920675162761768172
+      MuntahMiniboss (2)_15: -1357900276500274944
+      MuntahMiniboss (2)_16: -3735005272962783644
+      MuntahMiniboss (2)_17: 3608018668979299065
+      MuntahMiniboss (2)_18: 6081461741428669853
+      MuntahMiniboss (2)_2: 6443005492515809931
+      MuntahMiniboss (2)_3: -9157665666026349186
+      MuntahMiniboss (2)_4: -2716701795044951930
+      MuntahMiniboss (2)_5: -6572227924437277549
+      MuntahMiniboss (2)_6: 8068754093348871998
+      MuntahMiniboss (2)_7: -5811210249657616197
+      MuntahMiniboss (2)_8: 7745560044383600664
+      MuntahMiniboss (2)_9: 4138882548514934681
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
